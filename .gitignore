@@ -157,3 +157,5 @@ $RECYCLE.BIN/
 NodeJS-Simple-Website/WebApp/.ntvs_analysis.dat
 NodeJS-Simple-Website/WebApp/node_modules/
 ToDos/ToDos/node_modules/
+node-express-mongo/node_modules/body-parser/node_modules/iconv-lite/encodings/sbcs-data.js
+node-express-mongo/node_modules/
