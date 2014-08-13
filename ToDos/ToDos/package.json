@@ -1,0 +1,10 @@
+{
+  "name": "ToDos",
+  "version": "0.0.0",
+  "description": "ToDos",
+  "main": "server.js",
+  "author": {
+    "name": "pinal.bhatt",
+    "email": ""
+  }
+}
