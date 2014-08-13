@@ -63,7 +63,16 @@ If you're still getting a warning with urlencoded you need to use
 NodeJS Tools for Visual Studio
 
 
+----------
+
+markdown file edited via [https://stackedit.io/][5] and [http://dillinger.io/][6]
+
+----------
+
+
   [1]: http://clock.co.uk/blog/a-simple-website-in-nodejs-with-express-jade-and-stylus
   [2]: http://scotch.io/bar-talk/expressjs-4-0-new-features-and-upgrading-from-3-0
   [3]: http://scotch.io/tutorials/javascript/build-a-restful-api-using-node-and-express-4
   [4]: http://scotch.io/bar-talk/expressjs-4-0-new-features-and-upgrading-from-3-0
+  [5]: https://stackedit.io/
+  [6]: http://dillinger.io/
