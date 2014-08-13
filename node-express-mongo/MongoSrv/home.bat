@@ -1,0 +1,1 @@
+F:\Tools\mongodb\mongod --dbpath F:\Pinal.Bhatt\Git\GitHub\NodeJS-Examples\node-express-mongo\data
