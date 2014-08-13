@@ -1,0 +1,17 @@
+{
+  "name": "WebApp",
+  "version": "0.0.0",
+  "description": "WebApp NodeJS Simple WebSite",
+  "main": "server.js",
+  "author": {
+    "name": "Pinal Bhatt",
+    "email": "pinalbhatt@gmail.com"
+  },
+  "dependencies": {
+    "express": "^4.7.4",
+    "jade": "^1.5.0",
+    "morgan": "^1.2.2",
+    "nib": "^1.0.3",
+    "stylus": "^0.47.3"
+  }
+}
