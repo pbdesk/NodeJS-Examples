@@ -9,7 +9,8 @@ var user = require('./routes/user');
 var http = require('http');
 var path = require('path');
 var favicon = require('serve-favicon');
-
+var logger = require('morgan');
+var bodyParser = require('body-parser');
 
 var app = express();
 
@@ -19,11 +20,14 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 //app.use(express.favicon());
 app.use(favicon(__dirname + '/public/favicon.ico'));
-app.use(express.logger('dev'));
-app.use(express.json());
-app.use(express.urlencoded());
-app.use(express.methodOverride());
-app.use(app.router);
+//app.use(express.logger('dev'));
+app.use(logger('dev'));
+//app.use(express.json());
+app.use(bodyParser.json());
+//.use(express.urlencoded());
+app.use(bodyParser.urlencoded());
+//app.use(express.methodOverride());
+//app.use(app.router);
 app.use(require('stylus').middleware(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
 

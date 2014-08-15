@@ -8,8 +8,10 @@
     "email": ""
   },
   "dependencies": {
+    "body-parser": "^1.6.3",
     "express": "^4.8.3",
     "jade": "^1.5.0",
+    "morgan": "^1.2.2",
     "serve-favicon": "^2.0.1",
     "stylus": "^0.47.3"
   }
