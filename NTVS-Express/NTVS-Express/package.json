@@ -1,0 +1,15 @@
+{
+  "name": "NTVS_Express",
+  "version": "0.0.0",
+  "description": "NTVS-Express",
+  "main": "app.js",
+  "author": {
+    "name": "Pinal",
+    "email": ""
+  },
+  "dependencies": {
+    "express": "3.4.4",
+    "jade": "*",
+    "stylus": "*"
+  }
+}
