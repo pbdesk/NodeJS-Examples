@@ -1,0 +1,13 @@
+{
+  "name": "POC3",
+  "version": "0.0.0",
+  "description": "POC3",
+  "main": "app.js",
+  "author": {
+    "name": "pinal.bhatt",
+    "email": ""
+  },
+  "dependencies": {
+    "request": "^2.40.0"
+  }
+}
