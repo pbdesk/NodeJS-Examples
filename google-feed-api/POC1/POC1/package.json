@@ -1,0 +1,13 @@
+{
+  "name": "POC1",
+  "version": "0.0.0",
+  "description": "POC1",
+  "main": "app.js",
+  "author": {
+    "name": "pinal.bhatt",
+    "email": ""
+  },
+  "dependencies": {
+    "google-feed-api": "0.0.2"
+  }
+}
