@@ -1,0 +1,13 @@
+{
+  "name": "feed_aggregator",
+  "version": "0.0.0",
+  "description": "feed-aggregator",
+  "main": "app.js",
+  "author": {
+    "name": "pinal.bhatt",
+    "email": ""
+  },
+  "dependencies": {
+    "mongoose": "^3.8.15"
+  }
+}
