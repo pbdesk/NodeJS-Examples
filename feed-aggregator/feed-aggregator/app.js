@@ -10,9 +10,14 @@ var FeedItem = require('./models/FeedItem');
 
 //seedFeedSources();
 
-GetFeeds();
+//GetFeeds();
+
+
 
 console.log("Done");
+
+
+
 
 function GetFeeds() {
     var url = 'http://msdn.microsoft.com/en-us/magazine/rss/default.aspx?z=z&iss=1';

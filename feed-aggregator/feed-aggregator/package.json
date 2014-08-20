@@ -8,6 +8,8 @@
     "email": ""
   },
   "dependencies": {
-    "mongoose": "^3.8.15"
+    "mongoose": "^3.8.15",
+    "request": "^2.40.0",
+    "xml2js": "^0.4.4"
   }
 }
