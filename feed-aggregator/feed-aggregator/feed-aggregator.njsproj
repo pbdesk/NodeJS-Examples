@@ -12,7 +12,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>7d3be0e6-b6c6-451d-a9ce-60d94fd219ae</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>app3.js</StartupFile>
+    <StartupFile>SeedFeedTypes.js</StartupFile>
     <StartWebBrowser>False</StartWebBrowser>
     <SearchPath>
     </SearchPath>
@@ -36,6 +36,8 @@
     <Compile Include="models\FeedItem.js" />
     <Compile Include="models\FeedSource.js" />
     <Compile Include="models\FeedType.js" />
+    <Compile Include="SeedFeedSources.js" />
+    <Compile Include="SeedFeedTypes.js" />
     <Content Include="package.json" />
     <Content Include="README.md" />
   </ItemGroup>

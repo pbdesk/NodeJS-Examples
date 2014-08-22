@@ -8,7 +8,7 @@ var FeedSourceSchema = new Schema({
         type: Schema.ObjectId,
         ref: 'FeedType'
     }
-});
+}, { collection: 'FeedSources' });
 
 /*
  * feedtype
