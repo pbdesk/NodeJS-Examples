@@ -12,7 +12,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>7d3be0e6-b6c6-451d-a9ce-60d94fd219ae</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>app.js</StartupFile>
+    <StartupFile>app3.js</StartupFile>
     <StartWebBrowser>False</StartWebBrowser>
     <SearchPath>
     </SearchPath>
@@ -31,6 +31,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.js" />
+    <Compile Include="app2.js" />
+    <Compile Include="app3.js" />
     <Compile Include="models\FeedItem.js" />
     <Compile Include="models\FeedSource.js" />
     <Compile Include="models\FeedType.js" />

@@ -4,7 +4,10 @@ var Schema = mongoose.Schema;
 var FeedSourceSchema = new Schema({
     name: String,
     url: String,
-    feedtype: Number
+    feedType: {
+        type: Schema.ObjectId,
+        ref: 'FeedType'
+    }
 });
 
 /*
