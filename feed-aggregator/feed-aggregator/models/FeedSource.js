@@ -3,8 +3,12 @@ var Schema = mongoose.Schema;
 
 var FeedSourceSchema = new Schema({
     name: String,
-    url: String,
-    tags: [String],
+    url: {
+        type: String,
+        required: true,
+        index: true
+    },
+    tags: { type: [String], index: true },
     feedType: {
         type: Schema.ObjectId,
         ref: 'FeedType'

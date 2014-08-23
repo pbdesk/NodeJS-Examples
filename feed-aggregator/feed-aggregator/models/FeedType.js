@@ -6,7 +6,8 @@ var FeedTypeSchema = new Schema({
     name: {
         type: String,
         unique: true,
-        required: true
+        required: true,
+        index: true
     },
     description: String
 }, { collection: 'FeedTypes' });
