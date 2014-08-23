@@ -167,8 +167,8 @@ feed-aggregator/feed-aggregator/node_modules/
 RESTful-Express4/node_modules/
 feed-aggregator/feed-aggregator/mongo/data/
 
-**\.idea\workspace.xml
-**\.idea\tasks.xml
+**/.idea/workspace.xml
+**/.idea/tasks.xml
 *.iws
 **/node_modules/
 
