@@ -1,1 +1,1 @@
-f:\Tools\mongodb\mongo.exe
+C:\tools\mongodb\bin\mongo.exe

@@ -1,1 +1,1 @@
-F:\Tools\mongodb\mongod --dbpath ./data
+F:\Tools\mongodb\bin\mongod --dbpath ./../data
