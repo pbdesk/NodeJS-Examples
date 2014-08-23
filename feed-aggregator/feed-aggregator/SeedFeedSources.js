@@ -15,6 +15,7 @@ FeedType.findOne({name: 'SimpleRSSWithNoImage'}, function(err, feedType){
         var fSource = new FeedSource();
         fSource.name = "test";
         fSource.url = "http://sssss";
+        fSource.tags = ['Test1', 'Test2'];
         fSource.feedType = feedType;
 
         InsertFeedSource(fSource);

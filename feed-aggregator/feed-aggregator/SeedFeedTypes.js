@@ -18,9 +18,22 @@ fType.name = 'SimpleRSSWithImageInEnclosure';
 fType.description = 'Simple RSS feeds with Image In Enclosure';
 InsertFeedType(fType);
 
+fType = new FeedType();
+fType.name = 'SimpleRSSWithImage';
+fType.description = 'Simple RSS feeds with Image';
+InsertFeedType(fType);
 
 
+function InsertFeedType(feedType){
+    FeedType.insert(feedType,function (err, feedType, numberAffected, action) {
+        if (err) {
+            console.log("error while inserting");
+        }
+        console.log('Action : ' + action + ' numberAffected: ' + numberAffected);
+    });
+}
 
+/*
 function InsertFeedType(feedType) {
     if (feedType) {
         FeedType.findOne({ name : feedType.name }, function (err, source) {
@@ -45,4 +58,4 @@ function InsertFeedType(feedType) {
 
         });
     }
-}
+}*/
