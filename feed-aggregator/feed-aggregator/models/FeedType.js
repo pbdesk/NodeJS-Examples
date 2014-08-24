@@ -65,6 +65,10 @@ FeedTypeSchema.statics.insert = function(fType, cb){
         });
     }
 }
+/*
+FeedTypeSchema.statics.update = function(fType, cb){
+
+}*/
 
 /*FeedTypeSchema.methods.insert = function(cb){
     var ft = mongoose.model('FeedType');
@@ -92,7 +96,7 @@ FeedTypeSchema.statics.insert = function(fType, cb){
             }
         }
     });
-}*/;
+};*/
 
 module.exports = mongoose.model('FeedType', FeedTypeSchema);
 

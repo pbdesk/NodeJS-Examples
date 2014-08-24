@@ -2,11 +2,20 @@
 var Schema = mongoose.Schema;
 
 var FeedItemSchema = new Schema({
-    title: String,
-    link: String,
+    title: {
+        type: String,
+        required: true,
+        index: true
+    },
+    link: {
+        type: String,
+        required: true,
+        index: true
+    },
     description: String,
     pubDate: Date,
-    categories: String,
+    categories: { type: [String], index: true },
+    tags: { type: [String], index: true },
     imageUrl: String
 });
 
