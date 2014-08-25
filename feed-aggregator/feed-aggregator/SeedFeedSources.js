@@ -12,10 +12,23 @@ var FeedType = require('./models/FeedType');
 * */
 
 
-function insOrUpdFeedSource(feedTypeName, sourceName, sourceUrl, tags, isActive){
-    FeedType.findByName
+function insOrUpdFeedSource(feedTypeName, sourceName, sourceUrl, tags, isActive, callback){
+    FeedType.findByName(feedTypeName, function(err, fType){
+        if(err){
+            callback(err);
+        }
+        else if(fType){
+            var fSource = new FeedSource();
+            fSource.name = sourceName;
+            fSource.url = sourceUrl;
+            fSource.tags = tags;
+            fSource.isActive = isActive;
+            fSource.feedType = feedType;
+            FeedSource.insert(fSource);
+        }
+    });
 }
-FeedType.findOne({name: 'SimpleRSSWithNoImage'}, function(err, feedType){
+/*FeedType.findOne({name: 'SimpleRSSWithNoImage'}, function(err, feedType){
     if (err) {
         console.log("Feed Type not found");
         return;
@@ -29,9 +42,10 @@ FeedType.findOne({name: 'SimpleRSSWithNoImage'}, function(err, feedType){
 
         InsertFeedSource(fSource);
     }
-});
+});*/
 
 
+/*
 function InsertFeedSource(feedSource) {
     if (feedSource) {
         FeedSource.findOne({ url : feedSource.url }, function (err, source) {
@@ -56,4 +70,4 @@ function InsertFeedSource(feedSource) {
 
         });
     }
-}
+}*/

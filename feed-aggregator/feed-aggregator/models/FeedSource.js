@@ -24,6 +24,17 @@ var FeedSourceSchema = new Schema({
  */
 
 
-
+FeedSourceSchema.statics.insert = function(fSource, cb){
+    fSource.save(function (err1, item1, numberAffected) {
+        if (err1) {
+            console.log("error while inserting");
+            cb(err1);
+        }
+        else {
+            console.log('record inserted. numberAffected: ' + numberAffected);
+            cb(null, item1, numberAffected, "insert");
+        }
+    });
+}
 
 module.exports = mongoose.model('FeedSource', FeedSourceSchema);
