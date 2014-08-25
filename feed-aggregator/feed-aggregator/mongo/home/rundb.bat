@@ -1,1 +1,0 @@
-F:\Tools\mongodb\mongod --dbpath ./data

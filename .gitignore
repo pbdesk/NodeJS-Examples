@@ -166,3 +166,9 @@ feed-aggregator/feed-aggregator/node_modules/
 .ntvs_analysis.dat
 RESTful-Express4/node_modules/
 feed-aggregator/feed-aggregator/mongo/data/
+
+**/.idea/workspace.xml
+**/.idea/tasks.xml
+*.iws
+**/node_modules/
+
