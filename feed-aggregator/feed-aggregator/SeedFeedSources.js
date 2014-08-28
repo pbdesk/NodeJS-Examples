@@ -12,6 +12,9 @@ var FeedType = require('./models/FeedType');
 * */
 
 
+insOrUpdFeedSource("SimpleRSSWithNoImage","ASP.Net News", "http://www.asp.net/rss/content", ['One','NewsUpdates'], true, function(err, item){
+});
+
 function insOrUpdFeedSource(feedTypeName, sourceName, sourceUrl, tags, isActive, callback){
     FeedType.findByName(feedTypeName, function(err, fType){
         if(err){
@@ -23,8 +26,8 @@ function insOrUpdFeedSource(feedTypeName, sourceName, sourceUrl, tags, isActive,
             fSource.url = sourceUrl;
             fSource.tags = tags;
             fSource.isActive = isActive;
-            fSource.feedType = feedType;
-            FeedSource.insert(fSource);
+            fSource.feedType = fType;
+            FeedSource.insOrUpd(fSource, callback);
         }
     });
 }
