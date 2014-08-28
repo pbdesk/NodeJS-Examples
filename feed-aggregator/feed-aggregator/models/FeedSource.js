@@ -37,6 +37,43 @@ FeedSourceSchema.statics.findByUrl = function(url, cb){
     });
 };
 
+FeedSourceSchema.statics.upsert = function(fSource, cb){
+    var fs= this || mongoose.model('FeedSource');
+
+    fs.findOne({url: fSource.url}, function(err, item){
+        if(err){
+            throw new Error("Error in findone by url");
+        }
+        else
+        if(item){
+            //fSource._id = item._id;
+            item.tags = CombineTags(fSource.tags, item.tags);
+            item.name = fSource.name;
+            item.feedType = fSource.feedType;
+            item.isActive = fSource.isActive;
+            item.save(function(err){
+                if(err) {
+                    console.log("error : " + err);
+                }
+            });
+        }
+        else{
+            fSource.save(function (err1, item1, numberAffected) {
+                if (err1) {
+                    console.log("error while inserting");
+                    cb(err1);
+                }
+                else {
+                    console.log('record inserted. numberAffected: ' + numberAffected);
+                    cb(null, item1, numberAffected, "insert");
+                }
+            });
+        }
+
+    });
+
+}
+
 FeedSourceSchema.statics.insOrUpd = function(fSource, cb){
     var fs= this || mongoose.model('FeedSource');
 
@@ -79,20 +116,14 @@ FeedSourceSchema.statics.update1 = function(fSource, cb){
            }
            else if(item){
                if(item.url === fSource.url){
-                    fSource.tags = CombineTags(fSource.tags, item.tags);
-                    var id = fSource._id;
-                    delete  fSource._id;
-                   fs.update({_id: id}, fSource, function(err, obj){
-                       if(err){
-                           throw new Error("Error while updating");
-                       }
-                   } );
+                    item.tags = CombineTags(fSource.tags, item.tags);
 
-                    /*fs.findByIdAndUpdate(fSource._id, fSource,function(err, obj){
-                        if(err){
-                            throw new Error("Error while updating");
-                        }
-                    } );*/
+                   item.save(function(err){
+                       if(err) {
+                           console.log("error : " + err);
+                       }
+                   });
+
                }
            }
 
