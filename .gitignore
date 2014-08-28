@@ -154,21 +154,10 @@ $RECYCLE.BIN/
 
 # Mac desktop service store files
 .DS_Store
-NodeJS-Simple-Website/WebApp/.ntvs_analysis.dat
-NodeJS-Simple-Website/WebApp/node_modules/
-ToDos/ToDos/node_modules/
-node-express-mongo/node_modules/body-parser/node_modules/iconv-lite/encodings/sbcs-data.js
-node-express-mongo/node_modules/
-google-feed-api/POC1/POC1/node_modules/
-google-feed-api/POC2/node_modules/
-google-feed-api/POC3/POC3/node_modules/
-feed-aggregator/feed-aggregator/node_modules/
-.ntvs_analysis.dat
-RESTful-Express4/node_modules/
-feed-aggregator/feed-aggregator/mongo/data/
 
+.ntvs_analysis.dat
+**/.ntvs_analysis.dat
 **/.idea/workspace.xml
 **/.idea/tasks.xml
 *.iws
 **/node_modules/
-
