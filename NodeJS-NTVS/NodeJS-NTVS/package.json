@@ -1,0 +1,15 @@
+{
+  "name": "TheBoard",
+  "version": "0.1.0",
+  "description": "A Message board based on sticky notes.",
+  "main": "server.js",
+  "author": {
+    "name": "Pinal Bhatt",
+    "email": "self@pbdesk.com"
+  },
+  "dependencies": {
+    "express": "^4.8.3",
+    "underscore": "^1.6.0",
+    "vash": "^0.7.12-1"
+  }
+}
