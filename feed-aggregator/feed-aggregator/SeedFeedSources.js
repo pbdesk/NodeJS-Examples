@@ -12,9 +12,15 @@ var FeedType = require('./models/FeedType');
 * */
 
 
-insOrUpdFeedSource("SimpleRSSWithNoImage","YYYY", "http://www.asp.net/rss/yyy", ['One','two'], true, function(err, item){
+insOrUpdFeedSource("SimpleRSSWithNoImage","MSDN Magazine", "http://msdn.microsoft.com/en-us/magazine/rss/default.aspx?z=z&iss=1", ['MSDN Magazine'], true, function(err, item){
 });
-insOrUpdFeedSource("SimpleRSSWithNoImage","XXXX", "http://www.asp.net/rss/xxx", ['One','two'], false, function(err, item){
+insOrUpdFeedSource("SimpleRSSWithNoImage","Visual Studio Magazine - Blogs", "http://visualstudiomagazine.com/rss-feeds/blogs.aspx", ['Visual Studio Magazine'], true, function(err, item){
+});
+insOrUpdFeedSource("SimpleRSSWithNoImage","Visual Studio Magazine - Practical.Net", "http://visualstudiomagazine.com/rss-feeds/practical-net.aspx", ['Visual Studio Magazine', '.Net'], true, function(err, item){
+});
+insOrUpdFeedSource("SimpleRSSWithNoImage","Visual Studio Magazine - C# Corner", "http://visualstudiomagazine.com/rss-feeds/c-corner.aspx", ['Visual Studio Magazine', 'C#'], true, function(err, item){
+});
+insOrUpdFeedSource("SimpleRSSWithNoImage","Visual Studio Magazine - Open Source .NET", "http://visualstudiomagazine.com/rss-feeds/open-source-net.aspx", ['Visual Studio Magazine', '.Net'], true, function(err, item){
 });
 
 function insOrUpdFeedSource(feedTypeName, sourceName, sourceUrl, tags, isActive, callback){
