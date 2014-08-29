@@ -12,9 +12,9 @@ var FeedType = require('./models/FeedType');
 * */
 
 
-insOrUpdFeedSource("SimpleRSSWithNoImage","ASP.Net News123", "http://www.asp.net/rss/content1", ['One','two'], true, function(err, item){
+insOrUpdFeedSource("SimpleRSSWithNoImage","YYYY", "http://www.asp.net/rss/yyy", ['One','two'], true, function(err, item){
 });
-insOrUpdFeedSource("SimpleRSSWithNoImage","xxx", "http://www.asp.net/rss/xxx", ['One','three'], false, function(err, item){
+insOrUpdFeedSource("SimpleRSSWithNoImage","XXXX", "http://www.asp.net/rss/xxx", ['One','two'], false, function(err, item){
 });
 
 function insOrUpdFeedSource(feedTypeName, sourceName, sourceUrl, tags, isActive, callback){

@@ -12,3 +12,4 @@ mongoose.connect('mongodb://localhost/Articles');
 var FeedSource = require('./models/FeedSource');
 var FeedItem = require('./models/FeedItem');
 
+process.exit(0);
