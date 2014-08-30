@@ -10,6 +10,10 @@ app.set('view engine', 'jade');
 app.use(logger('dev'));
 app.use(express.static(__dirname + '/public'));
 
+app.get('/ngPartials/:partialPath',function(req, res){
+    res.render('ngPartials/' + req.params.partialPath);
+});
+
 app.get('*', function(req, res){
     res.render('index');
 });
