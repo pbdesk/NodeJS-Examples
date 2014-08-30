@@ -1,10 +1,7 @@
-doctype
-html
-    head
-        link(href="/favicon.ico", rel="shortcut icon", type="image/x-icon")
-        title My first jade file
-    body
-        h1 Hello, World!
-        h3 Hello from Express Jade NodeJS
-        p fun begins
+extends ../includes/layout
+
+block main-content
+    h1 Hello, World!
+    h3 Hello from Express Jade NodeJS
+    p fun begins
 
