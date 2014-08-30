@@ -1,0 +1,11 @@
+{
+  "name": "Core-MEAN",
+  "version": "1.0.0",
+  "description": "Core-MEAN POC",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pinal Bhatt",
+  "license": "ISC"
+}
