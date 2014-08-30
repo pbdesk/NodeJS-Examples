@@ -1,8 +1,10 @@
 extends ../includes/layout
 
 block main-content
-    h1 Hello, World!
-    h3 Hello from Express Jade NodeJS
-    p fun begins
-    div(ng-view)
+    section.content
+        h2 this is from block in index.jade
+        div(ng-view)
+        p fun begins
+    h3= mongoMessage
+    p fun contines
 
