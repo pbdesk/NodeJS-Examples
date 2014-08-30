@@ -161,3 +161,4 @@ $RECYCLE.BIN/
 **/.idea/tasks.xml
 *.iws
 **/node_modules/
+feed-aggregator/feed-aggregator/mongo/data/
