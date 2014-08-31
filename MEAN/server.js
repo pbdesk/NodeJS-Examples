@@ -12,7 +12,13 @@ app.use(logger('dev'));
 app.use(express.static(__dirname + '/public'));
 
 /*Mongoose/Mongo connect*/
-mongoose.connect('mongodb://localhost/MeanDB')
+if(env === 'development'){
+    mongoose.connect('mongodb://localhost/MeanDB');
+}
+else{
+    mongoose.connect('mongodb://localhost/MeanDB'); // Prod con str
+}
+
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error...'));
 db.once('open', function callback() {
@@ -35,7 +41,7 @@ app.get('*', function(req, res){
     res.render('index',{mongoMessage: mongoMessage});
 });
 
-var port = 3030;
+var port = process.env.PORT || 3030;
 
 app.listen(port);
 console.log('now running on port ' + port);
