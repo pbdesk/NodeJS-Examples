@@ -25,12 +25,12 @@ db.once('open', function callback() {
     console.log('MeanDB db opened');
 });
 
-var messageSchema = mongoose.Schema({message: String});
+/*var messageSchema = mongoose.Schema({message: String});
 var Message = mongoose.model('Message', messageSchema);
 var mongoMessage;
 Message.findOne().exec(function(err, messageDoc) {
     mongoMessage = messageDoc.message;
-});
+});*/
 
 
 app.get('/ngPartials/:partialPath',function(req, res){
@@ -38,7 +38,7 @@ app.get('/ngPartials/:partialPath',function(req, res){
 });
 
 app.get('*', function(req, res){
-    res.render('index',{mongoMessage: mongoMessage});
+    res.render('index'/*,{mongoMessage: mongoMessage}*/);
 });
 
 var port = process.env.PORT || 3030;

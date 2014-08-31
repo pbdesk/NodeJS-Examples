@@ -1,2 +1,10 @@
-h3 This is from partial
-h4 Value from controller {{myVar}}
+.container
+    .jumbotron
+        h1 Learning MEAN
+        p This is from main.jade partial. Value from controller {{myVar}}
+
+    .row
+        .col-md-6
+            div(ng-include="'/ngPartials/featured-courses'")
+        .col-md-6
+            div(ng-include="'/ngPartials/new-courses'")
