@@ -191,3 +191,4 @@ node_modules
 *.iws
 **/node_modules/
 feed-aggregator/feed-aggregator/mongo/data/
+MEAN/mongo/data/
