@@ -33,8 +33,8 @@ Message.findOne().exec(function(err, messageDoc) {
 });*/
 
 
-app.get('/ngPartials/:partialPath',function(req, res){
-    res.render('ngPartials/' + req.params.partialPath);
+app.get('/ngPartials/*',function(req, res){
+    res.render('../../public/ng/' + req.params[0]);
 });
 
 app.get('*', function(req, res){
